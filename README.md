@@ -16,4 +16,5 @@ MC_VERSION_URL=a url to download the minecraft server jar from
 ```bash
 docker-compose up -d
 ```
+finally you have to enable the port 25565 on your router, pointing to your machine.
 After that you can connect to your minecraft server at `subdomain.yourdomain.com`
