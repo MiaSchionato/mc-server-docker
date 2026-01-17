@@ -5,7 +5,7 @@ This is intended for personal use, but feel free to use it as you wish.
 
 ## Usage
 ## To run the server, first create a .env file with the following content:
-```
+
 API_TOKEN=(I used a token for managing my ddns with cloudflare, you can leave it empty if you don't need it)```
 DOMAIN=yourdomain.com
 SUBDOMAIN=minecraft
