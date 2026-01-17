@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if [ ! -f '.env' ]; then
-    exit 1
-fi
-
 if [ ! -f 'server.jar' ]; then
     curl -o server.jar $MC_VERSION_URL
 fi
