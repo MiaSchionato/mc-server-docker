@@ -1,0 +1,20 @@
+services:
+  mc-server:
+    build: .
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./server_data:/minecraft
+    environment:
+      - JAVA_OPTS=-Xmx4G -Xms4G
+      - MC_VERSION_URL=${MC_VERSION_URL}
+    restart: "on-failure:3"
+
+  cloudflare-ddns:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=${API_TOKEN}
+      - ZONE=${DOMAIN}
+      - SUBDOMAIN=${SUBDOMAIN}
+      - PROXY=false
