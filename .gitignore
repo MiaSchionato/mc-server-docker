@@ -1,3 +1,4 @@
 myWorld/
 .env
 server.jar
+server_data/
